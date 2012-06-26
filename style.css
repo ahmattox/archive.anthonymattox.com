@@ -44,6 +44,7 @@ h3 {
 p {
 	line-height: 1.4em;
 	font-weight: 500;
+	padding-bottom: .8em;
 }
 
 div.rule {
@@ -77,7 +78,7 @@ ul#projects {
 }
 
 ul#projects li {
-	margin: 0 0 50px;
+	margin: 0 0 40px;
 }
 
 ul#projects li:hover {
