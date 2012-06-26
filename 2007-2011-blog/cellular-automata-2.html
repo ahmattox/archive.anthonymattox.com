@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cellular Automata 2 || Anthony Mattox - Interaction Design & Digital Art</title>
+	<link type="text/css" rel="stylesheet" href="wp-content/themes/p10/style.css" />
+	
+	<!-- feeds -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed" />
+    <link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+    <link rel="pingback" href="xmlrpc.php" />
+	<link rel="icon" type="image/png" href="wp-content/themes/p10/favicon.png" />
+	
+		<!-- post specific styles -->
+		<style>
+		body{
+			background:;
+		}
+	</style>
+			<!-- / styles -->
+	
+			
+<!-- processing embed scripts -->
+<script src="wp-content/plugins/wordpress-processing-embed/data/pe_deployJava.js"></script>
+
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.0.12 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-6086323-1']);
+</script><script src="wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://anthonymattox.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+
+<script type="text/javascript" charset="utf-8">
+
+	/**
+	 * Courtesy of Kimili Flash Embed - Version 2.1.5
+	 * by Michael Bester - http://kimili.com
+	 */
+
+	(function(){
+		try {
+			// Disabling SWFObject's Autohide feature
+			if (typeof swfobject.switchOffAutoHideShow === "function") {
+				swfobject.switchOffAutoHideShow();
+			}
+		} catch(e) {}
+	})();
+</script>
+<link rel='prev' title='Cellular Automata' href='index.html%3Fp=1036.html' />
+<link rel='next' title='Back to Work' href='index.html%3Fp=1106.html' />
+<link rel='canonical' href='index.html%3Fp=1043.html' />
+<link rel='shortlink' href='index.html%3Fp=1043.html' />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[303,361] -->
+<meta name="description" content="After playing with binary cellular automata I thought I'd expand the script a little to accommodate more than two states of a pixel. Three loops are nested and" />
+<meta name="keywords" content="cellular automata,generative,processing,art,tutorial" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="wp-content/plugins/audio-player/assets/audio-player.js%3Fver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://anthonymattox.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"100%",animation:"no",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"333333",text:"ffffff",leftbg:"333333",lefticon:"a3a3a3",volslider:"ffffff",voltrack:"525252",rightbg:"d9d9d9",rightbghover:"FF2200",righticon:"333333",righticonhover:"FFFFFF",track:"000000",loader:"FF2200",border:"000000",tracker:"666666",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+    	<link rel='archives' title='October 2011' href='2011/10.html' />
+	<link rel='archives' title='September 2011' href='2011/09.html' />
+	<link rel='archives' title='July 2011' href='2011/07.html' />
+	<link rel='archives' title='June 2011' href='2011/06.html' />
+	<link rel='archives' title='May 2011' href='2011/05.html' />
+	<link rel='archives' title='January 2011' href='2011/01.html' />
+	<link rel='archives' title='December 2010' href='2010/12.html' />
+	<link rel='archives' title='November 2010' href='2010/11.html' />
+	<link rel='archives' title='October 2010' href='2010/10.html' />
+	<link rel='archives' title='September 2010' href='2010/09.html' />
+	<link rel='archives' title='June 2010' href='2010/06.html' />
+	<link rel='archives' title='May 2010' href='2010/05.html' />
+	<link rel='archives' title='April 2010' href='2010/04.html' />
+	<link rel='archives' title='March 2010' href='2010/03.html' />
+	<link rel='archives' title='February 2010' href='2010/02.html' />
+	<link rel='archives' title='January 2010' href='2010/01.html' />
+	<link rel='archives' title='December 2009' href='2009/12.html' />
+	<link rel='archives' title='November 2009' href='2009/11.html' />
+	<link rel='archives' title='October 2009' href='2009/10.html' />
+	<link rel='archives' title='September 2009' href='2009/09.html' />
+	<link rel='archives' title='August 2009' href='2009/08.html' />
+	<link rel='archives' title='May 2009' href='2009/05.html' />
+	<link rel='archives' title='April 2009' href='2009/04.html' />
+	<link rel='archives' title='March 2009' href='2009/03.html' />
+	<link rel='archives' title='February 2009' href='2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='2008/10.html' />
+	<link rel='archives' title='June 2008' href='2008/06.html' />
+	<link rel='archives' title='August 2007' href='2007/08.html' />
+	<link rel='archives' title='June 2007' href='2007/06.html' />
+	
+	<!-- <script type="text/javascript" language="javascript1.5" src="http://anthonymattox.com/wp-content/themes/p10/scripts/jquery-ui-1.8.5.custom.min.js"></script>-->
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.fancybox-1.3.1.pack.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.ui.effects.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/am_p10.js"></script>
+</head>
+<body>
+	<div id="container" class="blog">
+		<div id="head">
+			<div id="mainhead">
+				<h1><a href="index.html">Anthony Mattox <span>Interaction Design + Digital Art</span></a></h1>
+				<ul id="nav">
+					<li class="page_item page-item-27"><a href="index.html"><span>Home</span></a></li>
+<li class="page_item page-item-746"><a href="work/index.html"><span>Work</span></a></li>
+<li class="page_item page-item-398 current_page_parent"><a href="blog/index.html"><span>Blog</span></a></li>
+<li class="page_item page-item-2"><a href="about.html"><span>About</span></a></li>
+				</ul>
+			</div>
+			
+						
+					</div><div class="body" id="single">
+	<div class="neck">
+	</div>
+		<div class="post">
+		<div class="meta">
+		  <div class="metacontent">
+  			<h2><a href="index.html%3Fp=1043.html">Cellular Automata 2</a></h2>
+  			<div>
+  				<p class="date">02-27-09</p>
+  				<p class="tags">Tagged: <a href="tag/cellular-automata.html" rel="tag">cellular automata</a>, <a href="tag/generative/index.html" rel="tag">generative</a>, <a href="tag/processing/index.html" rel="tag">processing</a><br /></p>
+  				  			</div>
+  						</div>
+		</div>
+		<div class="content">
+			<p>After playing with binary cellular automata I thought I&#8217;d expand the script a little to accommodate more than two states of a pixel. Three loops are nested and each is iterated once for each state. If the index of each loop equals the three values above the current point the function returns the current state of a counter which is incremented in the innermost loop. In a binary system this is a little more complex than just testing each of the eight possible combinations, but is almost necessary when dealing with more states. I&#8217;ll post my code at the bottom of this post. But first, some pretty pictures.</p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2009/02/cellular_automata-4.jpg" alt="processing cellular automata 4" title="processing cellular automata 4" class="alignnone size-medium" /></p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2009/02/cellular_automata-3.jpg" alt="processing cellular automata 3" title="processing cellular automata 3" class="alignnone size-medium" /></p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2009/02/cellular_automata-2.jpg" alt="processing cellular automata 2" title="processing cellular automata 2" class="alignnone size-medium" /></p>
+<p><span id="more-1043"></span></p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2009/02/cellular_automata-5.jpg" alt="processing cellular automata 5" title="processing cellular automata 5" class="alignnone size-medium" /></p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2009/02/cellular_automata-1.jpg" alt="processing cellular automata 1" title="processing cellular automata 1" class="alignnone size-medium" /></p>
+<p>My code. Straight up. I used <a href="http://www.shiffman.net" taget="_blank">Dan Shiffman&#8217;s</a> example as a model and then went from there to add a few more features. Sorry the code isn&#8217;t annotated much but feel free to ask if you have any questions, and let me know if you make something cool with it.</p>
+<div class="code processing">
+<h4 class="cHead"><span><a href="http://www.processing.org">processing</a> code<br /><a href="http://www.anthonymattox.com/code_formatter">code formatter</a></span>Cellular Automata</h4>
+<pre><span Class="COM">// Cellular Automata Script
+</span><span Class="COM">// www.anthonymattox.com
+</span><span Class="COM">// based on Dan Shiffman's example at
+</span><span Class="COM">//      http://www.shiffman.net/teaching/nature/week7/
+</span><span Class="COM">// added unlimited states of cells, colors, and keyboard control
+</span>
+cellsystem CS;
+
+<span Class="KEY">void</span> <span Class="KEY">setup</span>() {
+  <span Class="KEY">size</span>(1920,1200);
+  <span Class="KEY">background</span>(0);
+  CS=<span Class="KEY">new</span> cellsystem();
+  <span Class="KEY">noFill</span>();
+  <span Class="KEY">noStroke</span>();
+  <span Class="KEY">rectMode</span>(<span Class="STR">CENTER</span>);
+  <span Class="KEY">frameRate</span>(100);
+  <span Class="KEY">smooth</span>();
+}
+
+<span Class="KEY">void</span> <span Class="KEY">draw</span>() {
+  CS.run();
+}
+
+<span Class="COM">//---------- Cellular Automata Class
+</span>
+<span Class="KEY">class</span> cellsystem{
+  <span Class="KEY">int</span> States;
+  <span Class="KEY">int</span>[] cells;
+  <span Class="KEY">int</span>[] newGen;
+  <span Class="KEY">int</span>[] rules;
+  <span Class="KEY">int</span> gen;
+  <span Class="KEY">float</span> Size;
+  <span Class="KEY">float</span> RSize;
+
+  cellsystem() {
+    States=4;
+    Size=10;
+    RSize=8;
+    cells=<span Class="KEY">new</span> <span Class="KEY">int</span>[<span Class="KEY">int</span>((<span Class="STR">width</span>+Size)/Size)];
+    newGen=<span Class="KEY">new</span> <span Class="KEY">int</span>[<span Class="KEY">int</span>((<span Class="STR">width</span>+Size)/Size)];
+    rules=<span Class="KEY">new</span> <span Class="KEY">int</span>[States*States*States];
+    restart();
+  }
+
+  <span Class="KEY">void</span> restart() {
+    gen=0;
+    <span Class="KEY">noiseSeed</span>(<span Class="KEY">int</span>(<span Class="KEY">random</span>(500)));
+    <span Class="KEY">background</span>(255);
+    <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;rules.length; i++) {
+      rules[i]=<span Class="KEY">int</span>(<span Class="KEY">random</span>(States));
+    }
+    <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;cells.length; i++) {
+      cells[i]=<span Class="KEY">constrain</span>(<span Class="KEY">int</span>(<span Class="KEY">noise</span>(i/20)*States),0,States-1);
+    }
+  }
+
+  <span Class="KEY">void</span> Continue() {
+    gen=0;
+    <span Class="KEY">background</span>(255);
+  }
+
+  <span Class="KEY">void</span> run() {
+    <span Class="KEY">if</span> (finished()==<span Class="KEY">false</span>) {
+      gen++;
+      update();
+      render();
+    }
+
+  }
+
+  <span Class="KEY">void</span> render() {
+    <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;cells.length; i++) {
+
+      <span Class="KEY">if</span> (cells[i]==0) {
+        <span Class="KEY">fill</span>(255);
+        <span Class="COM">//<span Class="KEY">stroke</span>(255);
+</span>      } <span Class="KEY">else</span> <span Class="KEY">if</span> (cells[i]==1) {
+        <span Class="KEY">fill</span>(255,10,0,180);
+        <span Class="COM">//<span Class="KEY">stroke</span>(255,10,0,180);
+</span>      } <span Class="KEY">else</span> <span Class="KEY">if</span> (cells[i]==2) {
+        <span Class="KEY">fill</span>(0,200,215,180);
+        <span Class="COM">//<span Class="KEY">stroke</span>(0,200,215,180);
+</span>      } <span Class="KEY">else</span>{
+        <span Class="KEY">fill</span>(0,220,160,180);
+        <span Class="COM">//<span Class="KEY">stroke</span>(0,220,160,180);
+</span>      }
+
+      <span Class="KEY">ellipse</span>(i*Size,gen*Size,RSize,RSize);
+      <span Class="COM">//<span Class="KEY">rect</span>(i*Size,gen*Size,RSize,RSize);
+</span>    }
+  }
+
+  <span Class="KEY">void</span> update() {
+    <span Class="KEY">for</span> (<span Class="KEY">int</span> i=1; i&lt;newGen.length-1; i++) {
+      <span Class="KEY">int</span> l=cells[i-1];
+      <span Class="KEY">int</span> m=cells[i];
+      <span Class="KEY">int</span> r=cells[i+1];
+      newGen[i]=next(l,m,r);
+    }
+    cells=(<span Class="KEY">int</span>[]) newGen.clone();
+  }
+
+  <span Class="KEY">int</span> next(<span Class="KEY">int</span> l, <span Class="KEY">int</span> m, <span Class="KEY">int</span> r) {
+    <span Class="KEY">int</span> n=0;
+    <span Class="KEY">for</span> (<span Class="KEY">int</span> iL=0; iL&lt;States; iL++) {
+      <span Class="KEY">for</span> (<span Class="KEY">int</span> iM=0; iM&lt;States; iM++) {
+        <span Class="KEY">for</span> (<span Class="KEY">int</span> iR=0; iR&lt;States; iR++) {
+          <span Class="KEY">if</span> (l==iL &#038;&#038; m==iM &#038;&#038; r==iR) {
+            <span Class="KEY">return</span> rules[n];
+          } <span Class="KEY">else</span> {
+            n++;
+          }
+        }
+      }
+    }
+    <span Class="KEY">return</span> 0;
+  }
+
+  <span Class="KEY">boolean</span> finished() {
+    <span Class="KEY">if</span> (gen &gt; ((<span Class="STR">height</span>-Size*2)/Size)) {
+      <span Class="KEY">return</span> <span Class="KEY">true</span>;
+    } <span Class="KEY">else</span> {
+      <span Class="KEY">return</span> <span Class="KEY">false</span>;
+    }
+  }
+}
+
+<span Class="COM">//---------- Input Scripts
+</span>
+<span Class="KEY">void</span> <span Class="KEY">keyPressed</span>() {
+  <span Class="KEY">if</span> (<span Class="KEY">key</span>==<span Class="STR">'s'</span>) {     <span Class="COM">// <span Class="KEY">save</span> <span Class="KEY">image</span>
+</span>    <span Class="KEY">saveFrame</span>(<span Class="STR">&quot;cellular_automata-####.png&quot;</span>);
+  } <span Class="KEY">else</span>
+  <span Class="KEY">if</span> (<span Class="KEY">key</span>==<span Class="STR">' '</span>) {
+    CS.restart();     <span Class="COM">// restart from top, <span Class="KEY">new</span> rules+initial values
+</span>  } <span Class="KEY">else</span>
+  <span Class="KEY">if</span> (<span Class="KEY">key</span>==<span Class="STR">'r'</span>) {     <span Class="COM">// start back at top with current values
+</span>    CS.Continue();
+  }
+}
+
+<span Class="KEY">void</span> <span Class="KEY">mousePressed</span>() {
+  <span Class="KEY">if</span> (<span Class="KEY">mouseButton</span>==<span Class="STR">LEFT</span>) {
+    CS.cells[<span Class="KEY">int</span>(<span Class="KEY">mouseX</span>/CS.Size)]=<span Class="KEY">int</span>(<span Class="KEY">random</span>(CS.States));
+  }
+}</pre>
+</div>
+		</div>
+				<br class="clear" />
+	</div>
+		
+	<div id="comments">
+		
+			<h3><span>8 comments</span></h3>
+		
+				
+		<ul id="commentlist">
+				<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1043.html">johnnp</a></h5>
+			<div class="date">04.10.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>hello there~<br />
+I love this!!<br />
+but I got ERRO when I copy this code to my Processing1.0<br />
+he said&#8221; A web color &#8220;such as #ffcc0 0&#8243; must be six digits.<br />
+             Bad erro line: -2</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.anthonymattox.com">tony</a></h5>
+			<div class="date">04.10.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>thanks,<br />
+Sorry about that. The way I have my code set up I wasn&#8217;t able to use ampersands and forgot the make a note. I&#8217;ve updated the code and there&#8217;s a comment about one thing you need to fix to get it working. I&#8217;ll address this issue properly soon.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://website">johnnp</a></h5>
+			<div class="date">04.13.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>it&#8217;s works,<br />
+Deeeeeeply appreciate your helps.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://website">johnnp</a></h5>
+			<div class="date">04.20.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>hello again~<br />
+the code run just fine!<br />
+but We got the another problem~<br />
+the image that created is 72dpi<br />
+when we print it out,but the quality didn&#8217;t enough(either &#8220;tif&#8221;, &#8220;tga&#8221;, &#8220;jpg&#8221;, &#8220;png&#8221;)<br />
+is there any solution?</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.anthonymattox.com">tony</a></h5>
+			<div class="date">04.20.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>I&#8217;m glad it&#8217;s working.</p>
+<p>To get a print-sized image you can either export a vector image (for this that might not be the best idea) or increase the size of the render-window and all of the objects. I explain both methods in my post on <a href="http://www.anthonymattox.com/rendering-processing-for-print" rel="nofollow">Rendering Processing for Print</a>.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1043.html">noman</a></h5>
+			<div class="date">05.05.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Are we supposed to get stills like above?<br />
+All I get are light red and blue circles and my window is positioned on the top left, making me miss half of the window.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.anthonymattox.com">tony</a></h5>
+			<div class="date">05.05.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>The images above come from the same script but just have different rendering parameters.</p>
+<p>If you look within the cellsystem class you will find a few variables are defined, States, Size (size of each cell), and RSize (size of the point drawn). If Size is greater than RSize there will be space between the points and if RSize is greater the shapes will overlap. In the images above the bot Size and RSize were 1 or less, making the individual points blend into an intricate pattern. I&#8217;m sorry these might not be the most logical terms or put in the easiest place. I was just having fun with this and for whatever reason it made sense to me at the time.</p>
+<p>The images I posted are, of course, some of the more interesting patterns. Depending on the initial points and the ruleset (both of which are randomized) it will sometimes just look like noise. The rendering size I have is very large to fit my screen, but you can scale it down to something more reasonable by changing the parameters of the size() function in the setup.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1043.html">noman</a></h5>
+			<div class="date">05.06.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Thanks, problem was with quite a few processing problems, that I had to save, then restart processing after resizing, for the resizing to work.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+		</ul>
+		
+			
+	</div>	</div>
+    <div id="foot">
+      <div id="footcontent">
+        <div id="cc">
+          <a href="http://creativecommons.org/licenses/by-nc/3.0/"></a>
+        </div>
+        <div id="links">
+          <a href="http://twitter.com/ahmattox" id="foot-twitter">@ahmattox</a>
+          <a href="http://friendsoftheweb.com/" id="foot-ftw">Friends of The Web</a>
+          <a href="http://madewithloveinbaltimore.org" id="foot-heart">Made with &hearts; in Baltimore</a>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+  </div><!-- / container -->
+  </body>
+</html>

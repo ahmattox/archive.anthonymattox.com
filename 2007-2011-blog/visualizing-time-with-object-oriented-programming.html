@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Visualizing Time with Object Oriented Programming || Anthony Mattox - Interaction Design & Digital Art</title>
+	<link type="text/css" rel="stylesheet" href="wp-content/themes/p10/style.css" />
+	
+	<!-- feeds -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed" />
+    <link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+    <link rel="pingback" href="xmlrpc.php" />
+	<link rel="icon" type="image/png" href="wp-content/themes/p10/favicon.png" />
+	
+		<!-- post specific styles -->
+		<style>
+		body{
+			background:;
+		}
+	</style>
+			<!-- / styles -->
+	
+			
+<!-- processing embed scripts -->
+<script src="wp-content/plugins/wordpress-processing-embed/data/pe_deployJava.js"></script>
+
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.0.12 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-6086323-1']);
+</script><script src="wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://anthonymattox.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+
+<script type="text/javascript" charset="utf-8">
+
+	/**
+	 * Courtesy of Kimili Flash Embed - Version 2.1.5
+	 * by Michael Bester - http://kimili.com
+	 */
+
+	(function(){
+		try {
+			// Disabling SWFObject's Autohide feature
+			if (typeof swfobject.switchOffAutoHideShow === "function") {
+				swfobject.switchOffAutoHideShow();
+			}
+		} catch(e) {}
+	})();
+</script>
+<link rel='prev' title='Visualizing Sound with Processing' href='index.html%3Fp=393.html' />
+<link rel='next' title='Feathery Fractals' href='index.html%3Fp=471.html' />
+<link rel='canonical' href='index.html%3Fp=337.html' />
+<link rel='shortlink' href='index.html%3Fp=337.html' />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[303,361] -->
+<meta name="description" content="Using the time functions Processing can be used to create clocks. I enjoy making clocks as a simple exercise in design, interactivity, and simple data" />
+<meta name="keywords" content="processing, objects, oop, object oriented programming, clock, time, modulo, array, open source,array,clock,modulo,object,oop,open source,time,tutorial,art" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="wp-content/plugins/audio-player/assets/audio-player.js%3Fver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://anthonymattox.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"100%",animation:"no",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"333333",text:"ffffff",leftbg:"333333",lefticon:"a3a3a3",volslider:"ffffff",voltrack:"525252",rightbg:"d9d9d9",rightbghover:"FF2200",righticon:"333333",righticonhover:"FFFFFF",track:"000000",loader:"FF2200",border:"000000",tracker:"666666",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+    	<link rel='archives' title='October 2011' href='2011/10.html' />
+	<link rel='archives' title='September 2011' href='2011/09.html' />
+	<link rel='archives' title='July 2011' href='2011/07.html' />
+	<link rel='archives' title='June 2011' href='2011/06.html' />
+	<link rel='archives' title='May 2011' href='2011/05.html' />
+	<link rel='archives' title='January 2011' href='2011/01.html' />
+	<link rel='archives' title='December 2010' href='2010/12.html' />
+	<link rel='archives' title='November 2010' href='2010/11.html' />
+	<link rel='archives' title='October 2010' href='2010/10.html' />
+	<link rel='archives' title='September 2010' href='2010/09.html' />
+	<link rel='archives' title='June 2010' href='2010/06.html' />
+	<link rel='archives' title='May 2010' href='2010/05.html' />
+	<link rel='archives' title='April 2010' href='2010/04.html' />
+	<link rel='archives' title='March 2010' href='2010/03.html' />
+	<link rel='archives' title='February 2010' href='2010/02.html' />
+	<link rel='archives' title='January 2010' href='2010/01.html' />
+	<link rel='archives' title='December 2009' href='2009/12.html' />
+	<link rel='archives' title='November 2009' href='2009/11.html' />
+	<link rel='archives' title='October 2009' href='2009/10.html' />
+	<link rel='archives' title='September 2009' href='2009/09.html' />
+	<link rel='archives' title='August 2009' href='2009/08.html' />
+	<link rel='archives' title='May 2009' href='2009/05.html' />
+	<link rel='archives' title='April 2009' href='2009/04.html' />
+	<link rel='archives' title='March 2009' href='2009/03.html' />
+	<link rel='archives' title='February 2009' href='2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='2008/10.html' />
+	<link rel='archives' title='June 2008' href='2008/06.html' />
+	<link rel='archives' title='August 2007' href='2007/08.html' />
+	<link rel='archives' title='June 2007' href='2007/06.html' />
+	
+	<!-- <script type="text/javascript" language="javascript1.5" src="http://anthonymattox.com/wp-content/themes/p10/scripts/jquery-ui-1.8.5.custom.min.js"></script>-->
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.fancybox-1.3.1.pack.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.ui.effects.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/am_p10.js"></script>
+</head>
+<body>
+	<div id="container" class="blog">
+		<div id="head">
+			<div id="mainhead">
+				<h1><a href="index.html">Anthony Mattox <span>Interaction Design + Digital Art</span></a></h1>
+				<ul id="nav">
+					<li class="page_item page-item-27"><a href="index.html"><span>Home</span></a></li>
+<li class="page_item page-item-746"><a href="work/index.html"><span>Work</span></a></li>
+<li class="page_item page-item-398 current_page_parent"><a href="blog/index.html"><span>Blog</span></a></li>
+<li class="page_item page-item-2"><a href="about.html"><span>About</span></a></li>
+				</ul>
+			</div>
+			
+						
+					</div><div class="body" id="single">
+	<div class="neck">
+	</div>
+		<div class="post">
+		<div class="meta">
+		  <div class="metacontent">
+  			<h2><a href="index.html%3Fp=337.html">Visualizing Time with Object Oriented Programming</a></h2>
+  			<div>
+  				<p class="date">11-14-08</p>
+  				<p class="tags">Tagged: <a href="tag/array.html" rel="tag">array</a>, <a href="tag/clock.html" rel="tag">clock</a>, <a href="tag/modulo.html" rel="tag">modulo</a>, <a href="tag/object.html" rel="tag">object</a>, <a href="tag/oop.html" rel="tag">oop</a>, <a href="tag/open-source.html" rel="tag">open source</a>, <a href="tag/processing/index.html" rel="tag">processing</a>, <a href="tag/time.html" rel="tag">time</a>, <a href="tag/tutorial.html" rel="tag">tutorial</a><br /></p>
+  				  			</div>
+  						</div>
+		</div>
+		<div class="content">
+			<p>Using the time functions Processing can be used to create clocks. I enjoy making clocks as a simple exercise in design, interactivity, and simple data visualization. It&#8217;s also a horrible pastime as I am always aware of exactly how much time I&#8217;ve wasted. This demonstration will walk through creating this applet, showing the implementation of the time functions, the pushMatrix() and popMatrix() functions, modulo function (%), and the basic construction of an array of custom objects.</p>
+<p>Like many key programming languages Processing is an Object Oriented Programming Language, sometimes referred to as an OOP. The concept might be a little bit hard to grasp for some, however, it is an invaluable tool which cuts down on script lengths and allows for far more interesting an complex programs without a lot of repetitive code. An &#8220;Object&#8221; (also called a class) is simply a collection of variables and functions. New instances of objects can be created with different values for all the variables and functions of the object can be easily executed to modify the instance. Although objects often have a graphical component or representation within a program it is important to remember that they are only collections of data and functions which can be manipulated in any way for whatever need. Another advantage is that a program, like this example, can contain arrays of objects, allowing them to all be changed within a &#8220;for loop&#8221;. The result is an elegant code which is very easy to construct and easier to edit.</p>
+<p><span id="more-337"></span></p>
+<p>In this program we will use a custom object to create each column of numbers. Using multiple instances of the column we will only have to set a few parameters for each rather than rewriting the whole script with new variables each time. The first thing to do is to create our object. It will need variables for the location, vertical and horizontal position, and one to indicate which number is highlighted. It also need a function that will draw it on the screen. I named it column, but as long as your consistent and the name doesn&#8217;t already represent something else an object can be called anything you want.</p>
+<p><applet code="http://anthonymattox.com/array_clock3" archive="http://www.anthonymattox.com/file/apps/array_clock3.jar" width="280" height="200" ></applet></p>
+<div class="code processing">
+<pre><span Class="KEY">class</span> column { <span Class="COM">//define our column object
+</span>  <span Class="KEY">int</span> x,y,n; <span Class="COM">//define object variables
+</span>  column(<span Class="KEY">int</span> xpos, <span Class="KEY">int</span> ypos, <span Class="KEY">int</span> num) {
+    x=xpos; <span Class="COM">// gets variables and puts them into the objects variables
+</span>    y=ypos;
+    n=num;
+  }
+
+  <span Class="KEY">void</span> render(){ <span Class="COM">//create the function to display each
+</span>    <span Class="KEY"><span Class="KEY">pushMatrix</span></span>(); <span Class="COM">//push matrix isplates the transformations
+</span>    <span Class="KEY">translate</span>(x,y); <span Class="COM">//<span Class="KEY">translate</span> to the proper position
+</span>    <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;10;i++) { <span Class="COM">//<span Class="KEY">print</span> each letter
+</span>      <span Class="KEY">if</span> (n==i) { <span Class="COM">//<span Class="KEY">if</span> the letter eaquals variable n then make it white
+</span>        <span Class="KEY">fill</span>(250);
+        <span Class="KEY">text</span>(i,0,i*15);
+      }
+      <span Class="KEY">else</span>{ <span Class="COM">// <span Class="KEY">else</span> a dark grey
+</span>        <span Class="KEY">fill</span>(255,50); <span Class="COM">//<span Class="KEY"><span Class="KEY">color</span></span> white, opacity 50 of 255
+</span>        <span Class="KEY">text</span>(i,0,i*15);
+      }
+    }
+    <span Class="KEY">popMatrix</span>(); <span Class="COM">//escape our isolated transformation
+</span>  }
+}</pre>
+</div>
+<p>&#8220;Class&#8221; defines a new object and the next five lines create the objects variables and get the values from each new instance. Our render function will be called each frame for each of our instances. It contains a for loop to draw each number in the column. A gray fill is applied unless the number in the drawing loop equals the &#8220;n&#8221; parameter of the instance, in which case the fill is white. The function also includes a translate function to move the column to the correct position. The translation occurs within a pushed matrix.</p>
+<p>Normally any transformations would be applied to everything they precede. In order to apply them to only particular graphics place them between <span class="code">pushMatrix();</span> and <span class="code">popMatrix();</span>. These functions can be nested but bust always be in pairs. There is also a limit to how many times matrices can be applied. This usually won&#8217;t be a problem but for some situations which require extensive iteration there may be a better solution.</p>
+<div class="code processing">
+<pre>column[] ARR=<span Class="KEY">new</span> column[14]; <span Class="COM">//create the array of column objects
+</span><span Class="KEY">void</span> <span Class="KEY">setup</span>(){
+  <span Class="KEY">background</span>(0);
+  <span Class="KEY">size</span>(280,200);
+  <span Class="KEY">fill</span>(255,50);
+  <span Class="KEY">smooth</span>();
+  <span Class="KEY">noStroke</span>();
+  <span Class="KEY">PFont</span> font; <span Class="COM">//create a variable <span Class="KEY">for</span> the font and define it's parameters
+</span>  font=<span Class="KEY">loadFont</span>(<span Class="STR">&quot;CourierNew36.vlw&quot;</span>);
+  <span Class="KEY">textFont</span>(font,12);
+  <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;ARR.length; i++) {
+    ARR[i]=<span Class="KEY">new</span> column(i*15+40,35,0); <span Class="COM">//<span Class="KEY">set</span> the parameters <span Class="KEY">for</span> all the objects
+</span>  }
+  <span Class="KEY">frameRate</span>(1); <span Class="COM">//the program only changes once a <span Class="KEY">second</span> so the framerate can be one
+</span>}</pre>
+</div>
+<p>Now setting up our environment we need to first create our array of columns. This declaration needs to be outside of the setup function as would any other global variables. Otherwise they would only be usable within that function. Our Setup Function contains the typical environment attributes. <span class="code">smooth();</span> anti-aliases the graphics. To use different fonts the font first has to be converted to a .vlw font and placed in the data folder of the sketch. This will be done automatically by Processing with the Create Font tool (in the tools menu). The frame rate does not need to be higher than one frame per second since the applet only changes once per second.</p>
+<p>The last thing in a setup is a &#8220;for loop&#8221; to create the objects within our array (arbitrarily named ARR) and define their initial state. Without this the program would give a &#8220;null pointer exception&#8221; because the objects it is being told to manipulate do not exist. The three parameters which must all be defined are the x position, the y position, and the highlighted number.</p>
+<div class="code processing">
+<pre><span Class="KEY">void</span> <span Class="KEY">draw</span>() {
+  <span Class="KEY">background</span>(0); <span Class="COM">//clear the pixel buffer each frame
+</span>  ARR[0].n=<span Class="KEY">second</span>()/10; <span Class="COM">//<span Class="KEY">set</span> the variable n to the proper number <span Class="KEY">for</span> each object
+</span>  ARR[1].n=<span Class="KEY">second</span>()%10;
+  ARR[2].n=<span Class="KEY">minute</span>()/10;
+  ARR[3].n=<span Class="KEY">minute</span>()%10;
+  ARR[4].n=<span Class="KEY">hour</span>()/10;
+  ARR[5].n=<span Class="KEY">hour</span>()%10;
+  ARR[6].n=<span Class="KEY">day</span>()/10;
+  ARR[7].n=<span Class="KEY">day</span>()%10;
+  ARR[8].n=<span Class="KEY">month</span>()/10;
+  ARR[9].n=<span Class="KEY">month</span>()%10;
+  ARR[10].n=<span Class="KEY">year</span>()/1000;
+  ARR[11].n=<span Class="KEY">year</span>()%1000/100;
+  ARR[12].n=<span Class="KEY">year</span>()%100/10;
+  ARR[13].n=<span Class="KEY">year</span>()%10;
+  <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;ARR.length; i++) {
+    ARR[i].render();  <span Class="COM">//render all of our objects
+</span>  }
+}</pre>
+</div>
+<p>The final component is our draw function, to be rendered once per second as we defined in our setup. First it clears the buffer with a white background, then redefines the &#8216;n&#8217; value for each instance. To access a variable of an instance use the syntax &#8220;instance_name.variable&#8221;. In our case our instances are within an array so &#8220;array_name[index].variable&#8221;. The time functions are self explanatory and simply output the integer of the current value. The modulo function (%) helps break up each digit. It outputs the remainder when the two values are divided in the case of &#8220;variable%10&#8243; it will give the last digit.</p>
+<p>Finally to render the columns use the same syntax as accessing the variables to use the render function. Placing it within a for loop will render it for each object in the array. Notice that the loop only extends to one less than the length of the array ( using the &lt; rather than &lt;=). This is because the index of the first element of the array is 0 not 1.</p>
+<p>And that is just it. I hope this is a useful guide to using objects within Processing as well as manipulating data and getting data from the clock. Processing also allows the creation of multiple tabs via the right most button the in the scripting button. All the tabs will be read as one script, and it is a great way to organize your code. It&#8217;s often helpful to place an object or function in it&#8217;s own tab. Here is our complete script:</p>
+<div class="code processing">
+<pre>column[] ARR=<span Class="KEY">new</span> column[14]; <span Class="COM">//create the array of column objects
+</span>
+<span Class="KEY">void</span> <span Class="KEY">setup</span>(){
+  <span Class="KEY">background</span>(0);
+  <span Class="KEY">size</span>(280,200);
+  <span Class="KEY">fill</span>(255,50);
+  <span Class="KEY">smooth</span>();
+  <span Class="KEY">noStroke</span>();
+  <span Class="KEY">PFont</span> font; <span Class="COM">//create a variable <span Class="KEY">for</span> the font and define it's parameters
+</span>  font=<span Class="KEY">loadFont</span>(<span Class="STR">&quot;CourierNew36.vlw&quot;</span>);
+  <span Class="KEY">textFont</span>(font,12);
+  <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;ARR.length; i++) {
+    ARR[i]=<span Class="KEY">new</span> column(i*15+40,35,0); <span Class="COM">//<span Class="KEY">set</span> the parameters <span Class="KEY">for</span> all the objects
+</span>  }
+  <span Class="KEY">frameRate</span>(1); <span Class="COM">//the program only changes once a <span Class="KEY">second</span> so the framerate can be one
+</span>}
+
+<span Class="KEY">void</span> <span Class="KEY">draw</span>() {
+  <span Class="KEY">background</span>(0); <span Class="COM">//clear the pixel buffer each frame
+</span>  ARR[0].n=<span Class="KEY">second</span>()/10; <span Class="COM">//<span Class="KEY">set</span> the variable n to the proper number <span Class="KEY">for</span> each object
+</span>  ARR[1].n=<span Class="KEY">second</span>()%10;
+  ARR[2].n=<span Class="KEY">minute</span>()/10;
+  ARR[3].n=<span Class="KEY">minute</span>()%10;
+  ARR[4].n=<span Class="KEY">hour</span>()/10;
+  ARR[5].n=<span Class="KEY">hour</span>()%10;
+  ARR[6].n=<span Class="KEY">day</span>()/10;
+  ARR[7].n=<span Class="KEY">day</span>()%10;
+  ARR[8].n=<span Class="KEY">month</span>()/10;
+  ARR[9].n=<span Class="KEY">month</span>()%10;
+  ARR[10].n=<span Class="KEY">year</span>()/1000;
+  ARR[11].n=<span Class="KEY">year</span>()%1000/100;
+  ARR[12].n=<span Class="KEY">year</span>()%100/10;
+  ARR[13].n=<span Class="KEY">year</span>()%10;
+  <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;ARR.length; i++) {
+    ARR[i].render();  <span Class="COM">//render all of our objects
+</span>  }
+}
+
+<span Class="KEY">class</span> column { <span Class="COM">//define our column object
+</span>  <span Class="KEY">int</span> x,y,n; <span Class="COM">//define object variables
+</span>  column(<span Class="KEY">int</span> xpos, <span Class="KEY">int</span> ypos, <span Class="KEY">int</span> num) {
+    x=xpos; <span Class="COM">// gets variables and puts them into the objects variables
+</span>    y=ypos;
+    n=num;
+  }
+
+  <span Class="KEY">void</span> render(){ <span Class="COM">//create the function to display each
+</span>    <span Class="KEY"><span Class="KEY">pushMatrix</span></span>(); <span Class="COM">//push matrix isplates the transformations
+</span>    <span Class="KEY">translate</span>(x,y); <span Class="COM">//<span Class="KEY">translate</span> to the proper position
+</span>    <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;10;i++) { <span Class="COM">//<span Class="KEY">print</span> each letter
+</span>      <span Class="KEY">if</span> (n==i) { <span Class="COM">//<span Class="KEY">if</span> the letter eaquals variable n then make it white
+</span>        <span Class="KEY">fill</span>(250);
+        <span Class="KEY">text</span>(i,0,i*15);
+      }
+      <span Class="KEY">else</span>{ <span Class="COM">// <span Class="KEY">else</span> a dark grey
+</span>        <span Class="KEY">fill</span>(255,50); <span Class="COM">//<span Class="KEY"><span Class="KEY">color</span></span> white, opacity 50 of 255
+</span>        <span Class="KEY">text</span>(i,0,i*15);
+      }
+    }
+    <span Class="KEY">popMatrix</span>(); <span Class="COM">//escape our isolated transformation
+</span>  }
+}</pre>
+</div>
+		</div>
+				<br class="clear" />
+	</div>
+		
+	<div id="comments">
+		
+	</div>	</div>
+    <div id="foot">
+      <div id="footcontent">
+        <div id="cc">
+          <a href="http://creativecommons.org/licenses/by-nc/3.0/"></a>
+        </div>
+        <div id="links">
+          <a href="http://twitter.com/ahmattox" id="foot-twitter">@ahmattox</a>
+          <a href="http://friendsoftheweb.com/" id="foot-ftw">Friends of The Web</a>
+          <a href="http://madewithloveinbaltimore.org" id="foot-heart">Made with &hearts; in Baltimore</a>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+  </div><!-- / container -->
+  </body>
+</html>

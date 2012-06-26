@@ -1,0 +1,51 @@
+.body.project{
+	padding: 340px 0 0 260px;
+}
+
+.body.project .post{
+	width: 210px;
+}
+
+.body.project h2{
+	background-image: url(http://www.pulsusgame.com/img/Logo.png);
+	width: 250px;
+	height: 64px;
+	position: relative;
+	left: -91px;
+	padding-bottom: 17px;
+}
+
+
+.body.project h3{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.42em;
+	color: #4C434C;
+	padding-bottom: 60px;
+}
+
+.body.project ul{
+	position: relative;
+	left: -10px;
+	width: 230px;
+}
+
+.body.project ul li {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.body.project ul li a{
+	background: white;
+	display: block;
+	padding: 8px 10px 7px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.body.project ul li a:hover{
+	background-color: #FFAA39;
+	color: white;
+}

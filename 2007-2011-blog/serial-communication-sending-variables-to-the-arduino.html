@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Serial Communication: Sending Variables to the Arduino || Anthony Mattox - Interaction Design & Digital Art</title>
+	<link type="text/css" rel="stylesheet" href="wp-content/themes/p10/style.css" />
+	
+	<!-- feeds -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed" />
+    <link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+    <link rel="pingback" href="xmlrpc.php" />
+	<link rel="icon" type="image/png" href="wp-content/themes/p10/favicon.png" />
+	
+		<!-- post specific styles -->
+		<style>
+		body{
+			background:;
+		}
+	</style>
+			<!-- / styles -->
+	
+			
+<!-- processing embed scripts -->
+<script src="wp-content/plugins/wordpress-processing-embed/data/pe_deployJava.js"></script>
+
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.0.12 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-6086323-1']);
+</script><script src="wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://anthonymattox.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+
+<script type="text/javascript" charset="utf-8">
+
+	/**
+	 * Courtesy of Kimili Flash Embed - Version 2.1.5
+	 * by Michael Bester - http://kimili.com
+	 */
+
+	(function(){
+		try {
+			// Disabling SWFObject's Autohide feature
+			if (typeof swfobject.switchOffAutoHideShow === "function") {
+				swfobject.switchOffAutoHideShow();
+			}
+		} catch(e) {}
+	})();
+</script>
+<link rel='prev' title='Posters for the Ligetisplit Ensemble' href='index.html%3Fp=1000.html' />
+<link rel='next' title='LED Audio Visualizer' href='index.html%3Fp=1018.html' />
+<link rel='canonical' href='index.html%3Fp=1005.html' />
+<link rel='shortlink' href='index.html%3Fp=1005.html' />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[303,361] -->
+<meta name="description" content="A method to send multiple variables to from processing to an arduino." />
+<meta name="keywords" content="arduino,code,led,processing,serial communication,tutorial" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="wp-content/plugins/audio-player/assets/audio-player.js%3Fver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://anthonymattox.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"100%",animation:"no",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"333333",text:"ffffff",leftbg:"333333",lefticon:"a3a3a3",volslider:"ffffff",voltrack:"525252",rightbg:"d9d9d9",rightbghover:"FF2200",righticon:"333333",righticonhover:"FFFFFF",track:"000000",loader:"FF2200",border:"000000",tracker:"666666",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+    	<link rel='archives' title='October 2011' href='2011/10.html' />
+	<link rel='archives' title='September 2011' href='2011/09.html' />
+	<link rel='archives' title='July 2011' href='2011/07.html' />
+	<link rel='archives' title='June 2011' href='2011/06.html' />
+	<link rel='archives' title='May 2011' href='2011/05.html' />
+	<link rel='archives' title='January 2011' href='2011/01.html' />
+	<link rel='archives' title='December 2010' href='2010/12.html' />
+	<link rel='archives' title='November 2010' href='2010/11.html' />
+	<link rel='archives' title='October 2010' href='2010/10.html' />
+	<link rel='archives' title='September 2010' href='2010/09.html' />
+	<link rel='archives' title='June 2010' href='2010/06.html' />
+	<link rel='archives' title='May 2010' href='2010/05.html' />
+	<link rel='archives' title='April 2010' href='2010/04.html' />
+	<link rel='archives' title='March 2010' href='2010/03.html' />
+	<link rel='archives' title='February 2010' href='2010/02.html' />
+	<link rel='archives' title='January 2010' href='2010/01.html' />
+	<link rel='archives' title='December 2009' href='2009/12.html' />
+	<link rel='archives' title='November 2009' href='2009/11.html' />
+	<link rel='archives' title='October 2009' href='2009/10.html' />
+	<link rel='archives' title='September 2009' href='2009/09.html' />
+	<link rel='archives' title='August 2009' href='2009/08.html' />
+	<link rel='archives' title='May 2009' href='2009/05.html' />
+	<link rel='archives' title='April 2009' href='2009/04.html' />
+	<link rel='archives' title='March 2009' href='2009/03.html' />
+	<link rel='archives' title='February 2009' href='2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='2008/10.html' />
+	<link rel='archives' title='June 2008' href='2008/06.html' />
+	<link rel='archives' title='August 2007' href='2007/08.html' />
+	<link rel='archives' title='June 2007' href='2007/06.html' />
+	
+	<!-- <script type="text/javascript" language="javascript1.5" src="http://anthonymattox.com/wp-content/themes/p10/scripts/jquery-ui-1.8.5.custom.min.js"></script>-->
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.fancybox-1.3.1.pack.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.ui.effects.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/am_p10.js"></script>
+</head>
+<body>
+	<div id="container" class="blog">
+		<div id="head">
+			<div id="mainhead">
+				<h1><a href="index.html">Anthony Mattox <span>Interaction Design + Digital Art</span></a></h1>
+				<ul id="nav">
+					<li class="page_item page-item-27"><a href="index.html"><span>Home</span></a></li>
+<li class="page_item page-item-746"><a href="work/index.html"><span>Work</span></a></li>
+<li class="page_item page-item-398 current_page_parent"><a href="blog/index.html"><span>Blog</span></a></li>
+<li class="page_item page-item-2"><a href="about.html"><span>About</span></a></li>
+				</ul>
+			</div>
+			
+						
+					</div><div class="body" id="single">
+	<div class="neck">
+	</div>
+		<div class="post">
+		<div class="meta">
+		  <div class="metacontent">
+  			<h2><a href="index.html%3Fp=1005.html">Serial Communication: Sending Variables to the Arduino</a></h2>
+  			<div>
+  				<p class="date">02-23-09</p>
+  				<p class="tags">Tagged: <a href="tag/arduino.html" rel="tag">arduino</a>, <a href="tag/code.html" rel="tag">code</a>, <a href="tag/led.html" rel="tag">led</a>, <a href="tag/processing/index.html" rel="tag">processing</a>, <a href="tag/serial-communication.html" rel="tag">serial communication</a><br /></p>
+  				  			</div>
+  						</div>
+		</div>
+		<div class="content">
+			<p>As I started working with my shiny new <a href="http://www.arduino.cc" target="_blank">Arduino</a> board I quickly learned how to build basic circuits and program the micro controller to respond to various stimuli, but what really interested me in the technology was the ability to send information between the board and a computer. I&#8217;ve done a fair amount of programming in <a href="http://www.processing.org" target="_blank">Processing</a> and was excited to bring some of my work off screen. There is a nice script on the <a href="http://www.arduino.cc" target="_blank">Arduino</a> site on sending data from the board to a computer to control elements within a processing sketch. Unfortunately, the reverse is not as well documented.</p>
+<p>I needed a script to send multiple variables from <a href="http://www.processing.org" target="_blank">Processing</a> to an <a href="http://www.arduino.cc" target="_blank">Arduino</a> to control a few components. After a bit of research, and more trial and error, I put together a script which controls the brightness of three LED&#8217;s through a virtual interface on a monitor. Here are my scripts and the circuit I came up with. It seems simple enough to me but if anyone has suggestions I&#8217;d love to hear them.</p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2009/02/arduino_led_serial_pixel.jpg" alt="physical LED pixel on arduio board controlled with processing" title="physical LED pixel on arduio board controlled with processing" class="alignnone size-medium wp-image-1006" /></p>
+<p>Here three color LED&#8217;s are connected to pins 9, 10, and 11 which can use Pulse Width Modulation (PWM) to control the brightness of each LED. They are connected to their respective pins through appropriate resistors and also connected to a grounded row in the bread board. In the image I am using the prototyping shield from <a href="http://www.adafruit.com/" target="_blank">Adafruit</a> which makes it easy to build small circuits.</p>
+<p><span id="more-1005"></span></p>
+<div class="code arduino">
+<h4 class="cHead"><span><a href="http://www.arduino.cc">arduino</a> code<br /><a href="http://www.anthonymattox.com/code_formatter">code formatter</a></span>LED Pixel</h4>
+<pre><span Class="COM">/* Led Pixel script - www.anthonymattox.com
+ * recieves input from processing script  */</span>
+
+<span Class="KEY">int</span> led0=9; <span Class="KEY">int</span> led1=10; <span Class="KEY">int</span> led2=11;
+<span Class="KEY">int</span> rval=0; <span Class="KEY">int</span> gval=0; <span Class="KEY">int</span> bval=0;
+
+<span Class="KEY">char</span> buff[]= <span Class="STR">&quot;0000000000&quot;</span>;
+
+<span Class="KEY">void</span> <span Class="KEY">setup</span>() {
+  <span Class="KEY">Serial</span>.begin(9600);
+  <span Class="KEY">pinMode</span>(led0,<span Class="STR">OUTPUT</span>);
+  <span Class="KEY">pinMode</span>(led1,<span Class="STR">OUTPUT</span>);
+  <span Class="KEY">pinMode</span>(led2,<span Class="STR">OUTPUT</span>);
+}
+
+<span Class="KEY">void</span> <span Class="KEY">loop</span>() {
+  <span Class="KEY">analogWrite</span>(led0,bval);
+  <span Class="KEY">analogWrite</span>(led1,gval);
+  <span Class="KEY">analogWrite</span>(led2,rval);
+
+  <span Class="KEY">while</span> (<span Class="KEY">Serial</span>.available()&gt;0) {
+    <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;10; i++) {
+      buff[i]=buff[i+1];
+    }
+    buff[10]=<span Class="KEY">Serial</span>.read();
+    <span Class="KEY">if</span> (buff[10]==<span Class="STR">'R'</span>) {
+      rval=<span Class="KEY">int</span>(buff[9]);
+    }
+    <span Class="KEY">if</span> (buff[10]==<span Class="STR">'G'</span>) {
+      gval=<span Class="KEY">int</span>(buff[9]);
+    }
+    <span Class="KEY">if</span> (buff[10]==<span Class="STR">'B'</span>) {
+      bval=<span Class="KEY">int</span>(buff[9]);
+    }
+
+  }
+  <span Class="KEY">delay</span>(10);
+}</pre>
+</div>
+<p>The script uses an array called buff to store all the incoming serial data. The While loop takes each incoming character and adds it to the end of the buff array after shifting all the values in the array down one. If it receives an indicator character, something created arbitrarily, it takes the previous character and puts it into another variable to be used later. Processing is sending a continues stream of data and this system of indicators allows the <a href="http://www.arduino.cc" target="_blank">Arduino</a> to take out the necessary information and use it to control the LED&#8217;s. <a href="http://www.processing.org" target="_blank">Processing</a> sends the indicator after the information so if a value is ever multiple characters when it gets the indicator the values are already in the buff array and can be used.</p>
+<p>The <a href="http://www.processing.org" target="_blank">Processing</a> script creates three instances of a slider object and in every loop of draw sends the value of each slider, serially through a USB cable, followed by the appropriate indicator character.</p>
+<div class="code processing">
+<h4 class="cHead"><span><a href="http://www.processing.org">processing</a> code<br /><a href="http://www.anthonymattox.com/code_formatter">code formatter</a></span>LED Pixel Processing Script</h4>
+<pre><span Class="KEY">import</span> processing.serial.*;
+
+Serial port;
+slider s1;
+slider s2;
+slider s3;
+
+<span Class="KEY">void</span> <span Class="KEY">setup</span>() {
+  <span Class="KEY">size</span>(200, 296);
+  <span Class="KEY">smooth</span>();
+
+  <span Class="KEY">println</span>(<span Class="STR">&quot;Available serial ports:&quot;</span>);
+  <span Class="KEY">println</span>(Serial.list());
+  port = <span Class="KEY">new</span> Serial(<span Class="KEY">this</span>, Serial.list()[0], 9600);
+
+  s1=<span Class="KEY">new</span> slider(70,20,255, <span Class="KEY"><span Class="KEY">color</span></span>(255,0,0));
+  s2=<span Class="KEY">new</span> slider(100,20,255, <span Class="KEY"><span Class="KEY">color</span></span>(0,255,0));
+  s3=<span Class="KEY">new</span> slider(130,20,255, <span Class="KEY"><span Class="KEY">color</span></span>(0,0,255));
+}
+
+<span Class="KEY">void</span> <span Class="KEY">draw</span>() {
+  <span Class="KEY">background</span>(0);
+  s1.render();
+  s2.render();
+  s3.render();
+  port.write(s1.p);
+  port.write(<span Class="STR">'R'</span>);
+  port.write(s2.p);
+  port.write(<span Class="STR">'G'</span>);
+  port.write(s3.p);
+  port.write(<span Class="STR">'B'</span>);
+}</pre>
+</div>
+<p>And the slider class which builds the interface looks like this</p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2009/02/processing_led_pixel_control.jpg" alt="processing led pixel control" title="processing led pixel control" class="alignnone size-medium wp-image-1007" /></p>
+<div class="code processing">
+<h4 class="cHead"><span><a href="http://www.processing.org">processing</a> code<br /><a href="http://www.anthonymattox.com/code_formatter">code formatter</a></span>Slider UI Element Class</h4>
+<pre><span Class="COM">/* Slider Class - www.anthonymattox.com */</span>
+
+<span Class="KEY">class</span> slider {
+  <span Class="KEY">int</span> xpos, ypos, thesize, p;
+  <span Class="KEY">boolean</span> slide;
+  <span Class="KEY"><span Class="KEY">color</span></span> c, cb;
+  slider (<span Class="KEY">int</span> x, <span Class="KEY">int</span> y, <span Class="KEY">int</span> s, <span Class="KEY"><span Class="KEY">color</span></span> col) {
+    xpos=x;
+    ypos=y;
+    thesize=s;
+    p=0;
+    slide=<span Class="KEY">true</span>;
+    c=col;
+    cb=<span Class="KEY"><span Class="KEY">color</span></span>(<span Class="KEY">red</span>(c),<span Class="KEY">green</span>(c),<span Class="KEY">blue</span>(c),150);
+  }
+
+  <span Class="KEY">void</span> render() {
+    <span Class="KEY">stroke</span>(40);
+    <span Class="KEY">strokeWeight</span>(10);
+    <span Class="KEY">noFill</span>();
+    <span Class="KEY">line</span>(xpos,ypos,xpos,ypos+thesize);
+
+    <span Class="KEY">stroke</span>(80);
+    <span Class="KEY">strokeWeight</span>(2);
+    <span Class="KEY">noFill</span>();
+    <span Class="KEY">line</span>(xpos,ypos,xpos,ypos+thesize);
+
+    <span Class="KEY">noStroke</span>();
+    <span Class="KEY">fill</span>(cb);
+    <span Class="KEY">ellipse</span>(xpos, thesize-p+ypos, 17, 17);
+    <span Class="KEY">fill</span>(c);
+    <span Class="KEY">ellipse</span>(xpos, thesize-p+ypos, 13, 13);
+
+    <span Class="COM">//<span Class="KEY">text</span>(thesize-dialy,xpos+10,dialy+ypos+5);
+</span>
+    <span Class="COM">// replace the +'s with <span Class="KEY">double</span> ampersands (web display issues)
+</span>    <span Class="KEY">if</span> (slide=<span Class="KEY">true</span> + <span Class="KEY">mousePressed</span>==<span Class="KEY">true</span> + <span Class="KEY">mouseX</span>&lt;xpos+15 + <span Class="KEY">mouseX</span>&gt;xpos-15){
+      <span Class="KEY">if</span> ((<span Class="KEY">mouseY</span>&lt;=ypos+thesize+10) &#038;&#038; (<span Class="KEY">mouseY</span>&gt;=ypos-10)) {
+        p=(3*p+(thesize-(<span Class="KEY">mouseY</span>-ypos)))/4;
+        <span Class="KEY">if</span> (p&lt;0) {
+          p=0;
+        } <span Class="KEY">else</span> <span Class="KEY">if</span> (p&gt;thesize) {
+          p=thesize;
+        }
+      }
+    }
+  }
+}</pre>
+</div>
+<p>Let me know is this is helpful or if you have any questions or problems.</p>
+		</div>
+				<br class="clear" />
+	</div>
+		
+	<div id="comments">
+		
+			<h3><span>11 comments</span></h3>
+		
+				
+		<ul id="commentlist">
+				<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1005.html">Frex.</a></h5>
+			<div class="date">04.19.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Wow, that&#8217;s a very great job.<br />
+Thank you very much. It is extactly what I was looking for.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://showgetter.bplaced.net/">The guy that doesn&#8217;t know any further (ShowgetteR)</a></h5>
+			<div class="date">05.28.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>I tried everything, but I always get the same error:</p>
+<p>&#8220;A web color (such as #ffcc00) must be six digits.&#8221;</p>
+<p>Below that:</p>
+<p>&#8220;Bad error line: -2&#8243;</p>
+<p>I really don&#8217;t know how to move on, what am I doing wrong? I just need to send these values quickly, as I just want to regulate 2 motors because I have no Potentiometers left&#8230;<br />
+Any help would be appretiated.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.anthonymattox.com">tony</a></h5>
+			<div class="date">05.29.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>The problem is on line 38 of the slider class.<br />
+I have a little problem with my CMS which will be fixed very soon. The ampersands in my code turn into funny strings. If you just fix that in the conditional statement on line 38 it should work fine. It should look like this</p>
+<p>if ((mouseY&lt;=ypos+thesize+10) &#038;&#038; (mouseY&gt;=ypos-10)) {</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.limeworks.co.za">Louw H</a></h5>
+			<div class="date">09.23.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Hi there, I know this sounds stupid, but is that code (not the arduino code &#8211; the processing and slider class) written in Java? It looks the same? If not please inform me. BTW, i like your idea very much! Great work!</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.anthonymattox.com">tony</a></h5>
+			<div class="date">09.23.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>The other code, run on the computer which communicates to the external <a href="http://www.arduino.cc" rel="nofollow">Arduino</a> board via usb, is scripted in a language called <a href="http://www.processing.org" rel="nofollow">Processing</a>. The language is based on Java and remains quite similar to it, aside from some nice simplifications and many built in functions for working with graphics. The basic structure of the language is the same.</p>
+<p>You can see more information about it on the <a href="http://www.processing.org" rel="nofollow">Processing site</a> as well as download it for free. <a href="http://www.arduino.cc" rel="nofollow">Arduino</a> is actually a sister project of <a href="http://www.processing.org" rel="nofollow">Processing</a> and the <a href="http://www.arduino.cc" rel="nofollow">Arduino</a> language, although built on C is modeled after <a href="http://www.processing.org" rel="nofollow">Processing</a>.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://lab.guilhermemartins.net/2010/07/22/processing-to-arduino/' rel='external nofollow' class='url'>Guilherme Martins : RGB Mixer &#8211; Processing to Arduino</a></p>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1005.html">Mark</a></h5>
+			<div class="date">07.06.11</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Hi, thanks for your example. Was wondering if you could explain the formula for the p variable. p=(3*p+(thesize-(mouseY-ypos)))/4;  I can&#8217;t seem to grasp what this is doing!! I know it works, but would like to understand it.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.anthonymattox.com">Anthony</a></h5>
+			<div class="date">07.06.11</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>It&#8217;s been a while since I&#8217;ve looked at this code, but I believe it adds a bit of easing to the motion of the slider by averaging the current position and the mouse position. If I&#8217;m understanding it right, p=thesize-(mouseY-ypos) should work fine to.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1005.html">Mark</a></h5>
+			<div class="date">07.06.11</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Thank you very much, I considered that might be the case, As I am still learning the basics, I don&#8217;t always understand the aesthetics written into the code! This is very instructional as well.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1005.html">Nathan</a></h5>
+			<div class="date">08.22.11</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>I keep getting the error message &#8220;cannot convert from String to char[]&#8221; for the line char buff[]= &#8220;)000000000&#8243;; when trying to export as an applet. Any suggestions?</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=1005.html">Robin Pooley</a></h5>
+			<div class="date">09.01.11</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Really great work!<br />
+Thank you.</p>
+<p>I am looking to build an LED cube and want it to represent activity on my companies system. I want the cubes lights to flicker when a user connects to the site or requests a page and want red LED&#8217;s to light up when an error occurs. I will keep you posted as to my progress :-) Thanks again.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+		</ul>
+		
+			
+	</div>	</div>
+    <div id="foot">
+      <div id="footcontent">
+        <div id="cc">
+          <a href="http://creativecommons.org/licenses/by-nc/3.0/"></a>
+        </div>
+        <div id="links">
+          <a href="http://twitter.com/ahmattox" id="foot-twitter">@ahmattox</a>
+          <a href="http://friendsoftheweb.com/" id="foot-ftw">Friends of The Web</a>
+          <a href="http://madewithloveinbaltimore.org" id="foot-heart">Made with &hearts; in Baltimore</a>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+  </div><!-- / container -->
+  </body>
+</html>

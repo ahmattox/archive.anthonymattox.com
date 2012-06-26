@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+#project-wikiweb{
+	padding-top: 100px;
+	padding-left: 30px;
+}
+
+#project-wikiweb div.post{
+}
+
+#project-wikiweb div.post .content{
+	background: url(../../img/whitebg-92.png) repeat;
+	padding: 30px 20px;
+	top: -30px;
+	left: 230px;
+	border-top: solid 5px #EEE;
+	border-left: solid 1px #EEE;
+	border-right: solid 1px #EEE;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	float: none;
+}
+
+#project-wikiweb div.post .meta{
+	border-radius: 5px;
+	background: url(../../img/whitebg-92.png) repeat;
+	top: 220px;
+	position: fixed;
+	float: none;
+}
+
+#project-wikiweb div.post .meta a.visit{
+	padding: 17px 15px 15px;
+	font-size: 16px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-bottomright: 0;
+}
+
+#project-wikiweb div.post .meta a.visit:hover{
+	background-color:#c8ecee;
+	color: #333333;
+}
+
+#project-wikiweb div.post .meta #metacontent{
+	padding: 10px 15px 17px;
+	line-height: 1.6em;
+}
+
+#project-wikiweb h2{
+	font-size: 42px;
+	color: #00A3C4;
+	font-weight: lighter;
+	font-weight:100;
+	font-family: Helvetica, Arial, sans-serif;
+	border-bottom: dotted 1px #00A3C4;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#project-wikiweb h3{
+	font-size: 22px;
+	color: #00A3C4;
+	font-weight: light;
+	font-weight:300;
+	font-family: Helvetica, Arial, sans-serif;
+	border-bottom: dotted 1px #00A3C4;
+	padding-bottom: 7px;
+	margin-bottom: 12px;
+}
+
+#project-wikiweb a{
+	color: #00A3C4;
+}
+
+#project-wikiweb a:hover{
+	color: #D57F00;
+}
+
+
+#project-wikiweb .post small{
+	width: 170px;
+	left: 490px;
+}
+

@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Visualizing Sound with Processing - Audio Tutorial || Anthony Mattox - Interaction Design & Digital Art</title>
+	<link type="text/css" rel="stylesheet" href="wp-content/themes/p10/style.css" />
+	
+	<!-- feeds -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed" />
+    <link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+    <link rel="pingback" href="xmlrpc.php" />
+	<link rel="icon" type="image/png" href="wp-content/themes/p10/favicon.png" />
+	
+		<!-- post specific styles -->
+		<style>
+		body{
+			background:;
+		}
+	</style>
+			<!-- / styles -->
+	
+			
+<!-- processing embed scripts -->
+<script src="wp-content/plugins/wordpress-processing-embed/data/pe_deployJava.js"></script>
+
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.0.12 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-6086323-1']);
+</script><script src="wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://anthonymattox.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+
+<script type="text/javascript" charset="utf-8">
+
+	/**
+	 * Courtesy of Kimili Flash Embed - Version 2.1.5
+	 * by Michael Bester - http://kimili.com
+	 */
+
+	(function(){
+		try {
+			// Disabling SWFObject's Autohide feature
+			if (typeof swfobject.switchOffAutoHideShow === "function") {
+				swfobject.switchOffAutoHideShow();
+			}
+		} catch(e) {}
+	})();
+</script>
+<link rel='prev' title='Pseudo-Code' href='index.html%3Fp=363.html' />
+<link rel='next' title='Visualizing Time with Object Oriented Programming' href='index.html%3Fp=337.html' />
+<link rel='canonical' href='index.html%3Fp=393.html' />
+<link rel='shortlink' href='index.html%3Fp=393.html' />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[303,361] -->
+<meta name="description" content="Although Processing does not have the ability to process audio on it's own there are a few libraries which can be used to add such features. I've been" />
+<meta name="keywords" content="audio, processing, scripting, sound, spectrum, visualization, fft, ess, tutorial,ess,fft,processing,sound,spectrum,tutorial,visualization,art" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="wp-content/plugins/audio-player/assets/audio-player.js%3Fver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://anthonymattox.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"100%",animation:"no",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"333333",text:"ffffff",leftbg:"333333",lefticon:"a3a3a3",volslider:"ffffff",voltrack:"525252",rightbg:"d9d9d9",rightbghover:"FF2200",righticon:"333333",righticonhover:"FFFFFF",track:"000000",loader:"FF2200",border:"000000",tracker:"666666",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+    	<link rel='archives' title='October 2011' href='2011/10.html' />
+	<link rel='archives' title='September 2011' href='2011/09.html' />
+	<link rel='archives' title='July 2011' href='2011/07.html' />
+	<link rel='archives' title='June 2011' href='2011/06.html' />
+	<link rel='archives' title='May 2011' href='2011/05.html' />
+	<link rel='archives' title='January 2011' href='2011/01.html' />
+	<link rel='archives' title='December 2010' href='2010/12.html' />
+	<link rel='archives' title='November 2010' href='2010/11.html' />
+	<link rel='archives' title='October 2010' href='2010/10.html' />
+	<link rel='archives' title='September 2010' href='2010/09.html' />
+	<link rel='archives' title='June 2010' href='2010/06.html' />
+	<link rel='archives' title='May 2010' href='2010/05.html' />
+	<link rel='archives' title='April 2010' href='2010/04.html' />
+	<link rel='archives' title='March 2010' href='2010/03.html' />
+	<link rel='archives' title='February 2010' href='2010/02.html' />
+	<link rel='archives' title='January 2010' href='2010/01.html' />
+	<link rel='archives' title='December 2009' href='2009/12.html' />
+	<link rel='archives' title='November 2009' href='2009/11.html' />
+	<link rel='archives' title='October 2009' href='2009/10.html' />
+	<link rel='archives' title='September 2009' href='2009/09.html' />
+	<link rel='archives' title='August 2009' href='2009/08.html' />
+	<link rel='archives' title='May 2009' href='2009/05.html' />
+	<link rel='archives' title='April 2009' href='2009/04.html' />
+	<link rel='archives' title='March 2009' href='2009/03.html' />
+	<link rel='archives' title='February 2009' href='2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='2008/10.html' />
+	<link rel='archives' title='June 2008' href='2008/06.html' />
+	<link rel='archives' title='August 2007' href='2007/08.html' />
+	<link rel='archives' title='June 2007' href='2007/06.html' />
+	
+	<!-- <script type="text/javascript" language="javascript1.5" src="http://anthonymattox.com/wp-content/themes/p10/scripts/jquery-ui-1.8.5.custom.min.js"></script>-->
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.fancybox-1.3.1.pack.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.ui.effects.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/am_p10.js"></script>
+</head>
+<body>
+	<div id="container" class="blog">
+		<div id="head">
+			<div id="mainhead">
+				<h1><a href="index.html">Anthony Mattox <span>Interaction Design + Digital Art</span></a></h1>
+				<ul id="nav">
+					<li class="page_item page-item-27"><a href="index.html"><span>Home</span></a></li>
+<li class="page_item page-item-746"><a href="work/index.html"><span>Work</span></a></li>
+<li class="page_item page-item-398 current_page_parent"><a href="blog/index.html"><span>Blog</span></a></li>
+<li class="page_item page-item-2"><a href="about.html"><span>About</span></a></li>
+				</ul>
+			</div>
+			
+						
+					</div><div class="body" id="single">
+	<div class="neck">
+	</div>
+		<div class="post">
+		<div class="meta">
+		  <div class="metacontent">
+  			<h2><a href="index.html%3Fp=393.html">Visualizing Sound with Processing</a></h2>
+  			<div>
+  				<p class="date">11-11-08</p>
+  				<p class="tags">Tagged: <a href="tag/audio.html" rel="tag">audio</a>, <a href="tag/ess.html" rel="tag">ess</a>, <a href="tag/fft.html" rel="tag">fft</a>, <a href="tag/processing/index.html" rel="tag">processing</a>, <a href="tag/sound/index.html" rel="tag">sound</a>, <a href="tag/spectrum.html" rel="tag">spectrum</a>, <a href="tag/tutorial.html" rel="tag">tutorial</a>, <a href="tag/visualization.html" rel="tag">visualization</a><br /></p>
+  				  			</div>
+  						</div>
+		</div>
+		<div class="content">
+			<p><img src="http://www.anthonymattox.com/wp-content/uploads/2008/11/soundb.gif" alt="3d Sound Grid" title="3d Sound Grid" width="304" height="225" class="right" />Although Processing does not have the ability to process audio on it&#8217;s own there are a few libraries which can be used to add such features. I&#8217;ve been experimenting with the <a href="http://www.tree-axis.com/Ess/">ESS</a> library but you can find others from the processing <a href="http://www.processing.org/reference/libraries/index.html">libraries page</a>. Gathering Data from live or recorded sound can be a powerful tool for artists and designers in creating interactive applications, audio visualizers, music videos, or anything else that could involve an interaction with sound. Getting the data is fairly straight forward and the script returns an array of data updated each frame. This demonstration with display the data very simply, however, the numbers could be applied to any attribute in any system to produce different effects.</p>
+<p>Here are the steps to creating a simple script to get the spectrum data from a microphone into a processing sketch. Using pre-recorded sound is similar. Once the data is in the sketch it can be manipulated and used to generate graphics or effect other aspects of a program including complex forms in 3d space using the OpenGL or P3D libraries. <span id="more-393"></span></p>
+<p>&nbsp;</p>
+<p>The first thing to do is import the ESS library into your sketch, making all it&#8217;s classes and functions available to you. <span class="code">import krister.Ess.*;</span> The import command needs to be at the beginning of your script and the library needs to be in the library folder of Processing. Any other libraries you want to use can be put in the same place.</p>
+<p>Next we need to create our FFT object. <span class="code">FFT myfft;</span> The first &#8220;FFT&#8221; denotes the class and &#8220;myfft&#8221; is a variable for our new instance and can be whatever you like. An FFT (Fast Fourier Transform) is a mathematical algorithm which breaks down a sequence of numbers into a series of frequencies. The output will be the peak amplitude for each frequency band. This will allow us to create a visual representation of the audio spectrum.</p>
+<p>Defining a few more variables brings us here:</p>
+<div class="code processing">
+<pre><span Class="KEY">import</span> krister.Ess.*;
+
+FFT myfft;
+AudioInput myinput;
+<span Class="KEY">int</span> bufferSize=512;</pre>
+</div>
+<p>&#8220;myinput&#8221; is an instance of the input class which will get audio from a microphone. Again it can be whatever you want, but remember that processing is a Case Sensitive language. &#8220;bufferSize&#8221; is a variable we will use later to to tell our FFT how many frequency bands to process.</p>
+<p></p>
+<p>Now That we have created our objects we can move on two our setup function. The setup function is run once when the program is run. Here we define all the information about our programs environment and the initial parameters for objects.</p>
+<div class="code processing">
+<pre><span Class="KEY">void</span> <span Class="KEY">setup</span>() {
+  <span Class="KEY">size</span>(532,400);
+  <span Class="KEY">frameRate</span>(30);
+  <span Class="KEY">background</span>(255);
+  <span Class="KEY">noStroke</span>();
+  <span Class="KEY">fill</span>(0);
+
+  Ess.start(<span Class="KEY">this</span>);
+  myinput=<span Class="KEY">new</span> AudioInput(bufferSize);
+  myfft=<span Class="KEY">new</span> FFT(bufferSize*2);
+  myinput.start();
+
+  myfft.damp(.3);
+  myfft.equalizer(<span Class="KEY">true</span>);
+  myfft.limits(.005,.05);
+}</pre>
+</div>
+<p>The first chunk should be simple enough if you are familiar with processing. Here we declare the size of the program, the frame rate, and display colors. In second we define our audio objects using the &#8220;bufferSize&#8221; variable we defined earlier and tell ESS and our input to start running. Notice how all these actions are run just once at the startup of the program, although some, like the stroke and fill colors could be redefined as the program is running. The last chunk effects how the FFT looks but is not necessary. Limits will effect the scale of the output, equalizer smooths out the spectrum and damping effects how quickly the output of one band will move making it look smoother or rougher.</p>
+<div class="code processing">
+<pre><span Class="KEY">void</span> <span Class="KEY">draw</span>() {
+  <span Class="KEY">background</span>(255);
+  <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;bufferSize;i++) {
+    <span Class="KEY">rect</span>(i+10,390,1,myfft.spectrum[i]*-400);
+  }
+}</pre>
+</div>
+<p>To make the program run we need to define our &#8220;draw&#8221; function. This will run continuously while the program is open. The background is drawn each frame so what was drawn previously is erased. The for each point in the spectrum (&#8220;i&#8221; represents the index of the value) we draw a rectangle at point (i+10,390) with width 1 pixel and height the spectrum value. The value is scaled negative to draw upwards.</p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2008/11/sound-2.gif" alt="audio spectrum analysis" title="sound-2" class="alignnone size-medium" /></p>
+<div class="code processing">
+<pre><span Class="KEY">import</span> krister.Ess.*;
+
+FFT myfft;
+AudioInput myinput;
+<span Class="KEY">int</span> bufferSize=512;
+
+<span Class="KEY">void</span> <span Class="KEY">setup</span>() {
+  <span Class="KEY">size</span>(532,400);
+  <span Class="KEY">frameRate</span>(30);
+  <span Class="KEY">background</span>(255);
+  <span Class="KEY">noStroke</span>();
+  <span Class="KEY">fill</span>(0);
+
+  Ess.start(<span Class="KEY">this</span>);
+  myinput=<span Class="KEY">new</span> AudioInput(bufferSize);
+  myfft=<span Class="KEY">new</span> FFT(bufferSize*2);
+  myinput.start();
+
+  myfft.damp(.3);
+  myfft.equalizer(<span Class="KEY">true</span>);
+  myfft.limits(.005,.05);
+}
+
+<span Class="KEY">void</span> <span Class="KEY">draw</span>() {
+  <span Class="KEY">background</span>(255);
+  <span Class="KEY">for</span> (<span Class="KEY">int</span> i=0; i&lt;bufferSize;i++) {
+    <span Class="KEY">rect</span>(i+10,390,1,myfft.spectrum[i]*-400);
+  }
+}
+
+<span Class="KEY">public</span> <span Class="KEY">void</span> audioInputData(AudioInput theInput) {
+  myfft.getSpectrum(myinput);
+}</pre>
+</div>
+<p>Finall we define one more function to link the input to the FFT and we have our complete and functional script. This script renders the audio spectrum very simply but any graphics can be added within the for loop using <span class="code">myfft.spectrum[i]</span>to adjust any parameter. If you have any syntax questions the <a href="http://www.processing.org/reference/index.html">Processing reference</a> is a fantastic resource. Or leave a comment if you have more questions.</p>
+		</div>
+				<br class="clear" />
+	</div>
+		
+	<div id="comments">
+		
+			<h3><span>14 comments</span></h3>
+		
+				
+		<ul id="commentlist">
+				<li class="post pingback">
+		<p>Pingback: <a href='http://ianin.com/archives/409' rel='external nofollow' class='url'>Precedent: Audio visualizer in Processing | IANIN DESIGN</a></p>
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://www.designerstalk.com/forums/help-me/53617-audio-generated-imagery.html#post590197' rel='external nofollow' class='url'>DesignersTalk</a></p>
+	</li>
+	<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=393.html">truman</a></h5>
+			<div class="date">01.28.10</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>How do i make this visualizer get the sound not from the microphone, but from whatever sound the computer&#8217;s making?? Like get the sound from the audio card&#8217;s output or something like that</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.anthonymattox.com">tony</a></h5>
+			<div class="date">01.28.10</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>You can use <a href="http://code.google.com/p/soundflower/" rel="nofollow">soundflower</a> to rout sound between programs. In the program producing the sound set the audio output to a <a href="http://code.google.com/p/soundflower/" rel="nofollow">soundflower</a> channel and do the same for the input in the other program. I havn&#8217;t tried to use this in <a href="http://www.processing.org" rel="nofollow">Processing</a>, but there should be a way to do it.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=393.html">Mike</a></h5>
+			<div class="date">02.15.10</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>&#8220;truman&#8221;: I have the same question. Most of the processing audio libs that I&#8217;ve seen do not seem to have a way of using the computer audio and use that as input. I would like to do realtime processing &#8230;ahem&#8230; of audio in a song I&#8217;m playing or the audio of a movie &#8230;. </p>
+<p>why can&#8217;t these libraries use computer audio as an input channel?</p>
+<p>that should be the FIRST thing any library writer ought to implement (in my &#8220;lay&#8221; opinion)</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.chloefan.com">Chloe</a></h5>
+			<div class="date">04.09.10</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Thanks for the great tutorial, and I love your site! I was wondering if you knew anything about recognizing and classifying sounds with ESS? For example, compare spectrums from an audio input and compare it with pre-recorded sounds and classifying the audio input based on which pre-recording it sounds like? I&#8217;m assuming I&#8217;ll need to store the audio data in some way, like in an array with the spectrum data, then compare it with other spectrum data&#8230; Thanks for your help!</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=393.html">UB</a></h5>
+			<div class="date">04.12.10</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Mike, you might wanner try looking at using Max Msp 5 with Processing to implement real time audio processing.</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://audiosbooks.com/photos/nice-audios-photos-2/' rel='external nofollow' class='url'>Nice Audios photos | Audios Books</a></p>
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://www.polkspeakersworld.com/nox-audio-scout-hsm001a0-headset-black/' rel='external nofollow' class='url'>Nox-Audio Scout HSM001A0 Headset (Black)</a></p>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=393.html">Peter</a></h5>
+			<div class="date">03.22.11</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Great! Thx, that was exactly what I was looking for!</p>
+<p>Nice website btw ;)</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://seanahndesign.wordpress.com/2011/05/19/audio-visualizer/' rel='external nofollow' class='url'>Audio Visualizer &laquo; Sean Ahn&#039;s Design Progress</a></p>
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://tomaszstaszakfmp.wordpress.com/2011/03/10/39/' rel='external nofollow' class='url'>&#8230; | tomaszstaszakfmp</a></p>
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://video.logratuit.com/2011/05/audio-visualizer/' rel='external nofollow' class='url'>Audio Visualizer | Video Tutorials at logratuit.com</a></p>
+	</li>
+	<li class="post pingback">
+		<p>Pingback: <a href='http://video.logratuit.com/2011/05/nice-audio-frequency-photos/' rel='external nofollow' class='url'>Nice Audio Frequency photos | Video Tutorials at logratuit.com</a></p>
+	</li>
+		</ul>
+		
+			
+	</div>	</div>
+    <div id="foot">
+      <div id="footcontent">
+        <div id="cc">
+          <a href="http://creativecommons.org/licenses/by-nc/3.0/"></a>
+        </div>
+        <div id="links">
+          <a href="http://twitter.com/ahmattox" id="foot-twitter">@ahmattox</a>
+          <a href="http://friendsoftheweb.com/" id="foot-ftw">Friends of The Web</a>
+          <a href="http://madewithloveinbaltimore.org" id="foot-heart">Made with &hearts; in Baltimore</a>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+  </div><!-- / container -->
+  </body>
+</html>

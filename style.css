@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+	background: #FEE35B;
+	color: #3D3823;
+}
+
+a {
+	color: #3D3823;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+div {
+	position: relative;
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font-size: 250%;
+	padding: 0 0 .3em;
+}
+
+h2 {
+	font-size: 137.5%;
+}
+
+h3 {
+	font-size: 150%;
+	padding: 0 0 .3em;
+}
+
+p {
+	line-height: 1.4em;
+	font-weight: 500;
+}
+
+div.rule {
+	background: #3D3823;
+	height: 6px;
+	width: 70%;
+	margin: 50px 0 60px;
+}
+
+
+::-moz-selection {
+       background-color: #FFF;
+       color: #000;
+}
+
+::selection {
+       background-color: #FFF;
+       color: #000;
+}
+
+
+
+
+#container {
+	padding: 100px 100px;
+	width: 390px;
+}
+
+
+ul#projects {
+}
+
+ul#projects li {
+	margin: 0 0 50px;
+}
+
+ul#projects li:hover {
+}
+
+ul#projects li a {
+	display: block;
+}
+
+

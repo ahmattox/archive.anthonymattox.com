@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Creating Geometric Fractals with Processing || Anthony Mattox - Interaction Design & Digital Art</title>
+	<link type="text/css" rel="stylesheet" href="wp-content/themes/p10/style.css" />
+	
+	<!-- feeds -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed" />
+    <link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+    <link rel="pingback" href="xmlrpc.php" />
+	<link rel="icon" type="image/png" href="wp-content/themes/p10/favicon.png" />
+	
+		<!-- post specific styles -->
+		<style>
+		body{
+			background:;
+		}
+	</style>
+			<!-- / styles -->
+	
+			
+<!-- processing embed scripts -->
+<script src="wp-content/plugins/wordpress-processing-embed/data/pe_deployJava.js"></script>
+
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.0.12 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-6086323-1']);
+</script><script src="wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://anthonymattox.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+
+<script type="text/javascript" charset="utf-8">
+
+	/**
+	 * Courtesy of Kimili Flash Embed - Version 2.1.5
+	 * by Michael Bester - http://kimili.com
+	 */
+
+	(function(){
+		try {
+			// Disabling SWFObject's Autohide feature
+			if (typeof swfobject.switchOffAutoHideShow === "function") {
+				swfobject.switchOffAutoHideShow();
+			}
+		} catch(e) {}
+	})();
+</script>
+<link rel='prev' title='3d L-System Structure' href='index.html%3Fp=503.html' />
+<link rel='next' title='WordPress' href='index.html%3Fp=520.html' />
+<link rel='canonical' href='index.html%3Fp=378.html' />
+<link rel='shortlink' href='index.html%3Fp=378.html' />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[303,361] -->
+<meta name="description" content="an open source script for generating geometric l-system fractals with processing." />
+<meta name="keywords" content="processing, geometric, fractal, l-system, recursive, open-sources,fractal,geometric,l-system,open source,recursive,art" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="wp-content/plugins/audio-player/assets/audio-player.js%3Fver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://anthonymattox.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"100%",animation:"no",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"333333",text:"ffffff",leftbg:"333333",lefticon:"a3a3a3",volslider:"ffffff",voltrack:"525252",rightbg:"d9d9d9",rightbghover:"FF2200",righticon:"333333",righticonhover:"FFFFFF",track:"000000",loader:"FF2200",border:"000000",tracker:"666666",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+    	<link rel='archives' title='October 2011' href='2011/10.html' />
+	<link rel='archives' title='September 2011' href='2011/09.html' />
+	<link rel='archives' title='July 2011' href='2011/07.html' />
+	<link rel='archives' title='June 2011' href='2011/06.html' />
+	<link rel='archives' title='May 2011' href='2011/05.html' />
+	<link rel='archives' title='January 2011' href='2011/01.html' />
+	<link rel='archives' title='December 2010' href='2010/12.html' />
+	<link rel='archives' title='November 2010' href='2010/11.html' />
+	<link rel='archives' title='October 2010' href='2010/10.html' />
+	<link rel='archives' title='September 2010' href='2010/09.html' />
+	<link rel='archives' title='June 2010' href='2010/06.html' />
+	<link rel='archives' title='May 2010' href='2010/05.html' />
+	<link rel='archives' title='April 2010' href='2010/04.html' />
+	<link rel='archives' title='March 2010' href='2010/03.html' />
+	<link rel='archives' title='February 2010' href='2010/02.html' />
+	<link rel='archives' title='January 2010' href='2010/01.html' />
+	<link rel='archives' title='December 2009' href='2009/12.html' />
+	<link rel='archives' title='November 2009' href='2009/11.html' />
+	<link rel='archives' title='October 2009' href='2009/10.html' />
+	<link rel='archives' title='September 2009' href='2009/09.html' />
+	<link rel='archives' title='August 2009' href='2009/08.html' />
+	<link rel='archives' title='May 2009' href='2009/05.html' />
+	<link rel='archives' title='April 2009' href='2009/04.html' />
+	<link rel='archives' title='March 2009' href='2009/03.html' />
+	<link rel='archives' title='February 2009' href='2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='2008/10.html' />
+	<link rel='archives' title='June 2008' href='2008/06.html' />
+	<link rel='archives' title='August 2007' href='2007/08.html' />
+	<link rel='archives' title='June 2007' href='2007/06.html' />
+	
+	<!-- <script type="text/javascript" language="javascript1.5" src="http://anthonymattox.com/wp-content/themes/p10/scripts/jquery-ui-1.8.5.custom.min.js"></script>-->
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.fancybox-1.3.1.pack.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/jquery.ui.effects.js"></script>
+	<script type="text/javascript" language="javascript1.5" src="wp-content/themes/p10/scripts/am_p10.js"></script>
+</head>
+<body>
+	<div id="container" class="blog">
+		<div id="head">
+			<div id="mainhead">
+				<h1><a href="index.html">Anthony Mattox <span>Interaction Design + Digital Art</span></a></h1>
+				<ul id="nav">
+					<li class="page_item page-item-27"><a href="index.html"><span>Home</span></a></li>
+<li class="page_item page-item-746"><a href="work/index.html"><span>Work</span></a></li>
+<li class="page_item page-item-398 current_page_parent"><a href="blog/index.html"><span>Blog</span></a></li>
+<li class="page_item page-item-2"><a href="about.html"><span>About</span></a></li>
+				</ul>
+			</div>
+			
+						
+					</div><div class="body" id="single">
+	<div class="neck">
+	</div>
+		<div class="post">
+		<div class="meta">
+		  <div class="metacontent">
+  			<h2><a href="index.html%3Fp=378.html">Creating Geometric Fractals with Processing</a></h2>
+  			<div>
+  				<p class="date">11-18-08</p>
+  				<p class="tags">Tagged: <a href="tag/fractal/index.html" rel="tag">fractal</a>, <a href="tag/geometric.html" rel="tag">geometric</a>, <a href="tag/l-system.html" rel="tag">l-system</a>, <a href="tag/open-source.html" rel="tag">open source</a>, <a href="tag/processing/index.html" rel="tag">processing</a>, <a href="tag/recursive.html" rel="tag">recursive</a><br /></p>
+  				  			</div>
+  						</div>
+		</div>
+		<div class="content">
+			<p>Geometric fractals can be very visually interesting and aesthetically pleasing and are quite easy to understand and create, even just with pencil and paper. Computers make the process a bit easier though.<br />
+Within an object oriented programming environment</p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2008/11/geometric_fractal_1.gif" alt="geometric iteration" title="geometric iteration" class="alignnone size-medium" /></p>
+<p>The process of creating such a fractal begins with a basic shape. In this illustration a line, but it could be a square, circle, arc, cube, or perhaps a bunny rabbit. Then we have the rule. Each iteration every instance of the initial object is replaced with the rule shape. Here a line is turned into a &#8216;Y&#8217; and in each subsequent iteration all lines are turned into &#8216;Y&#8217;s as well. You can probably see quite quickly by using different rules geometric fractals can generate all sorts of shapes and textures. More possibilities are opened by adding more complex transformations, changing the scale, color, or any other property, limiting iteration to only certain shapes, adding random factors, and working in 3d environments.</p>
+<p><img src="http://www.anthonymattox.com/wp-content/uploads/2008/11/geometric_fractal_tree.jpg" alt="geometric_fractal_tree" title="geometric_fractal_tree" class="alignnone size-medium wp-image-778" /></p>
+<p><span id="more-378"></span></p>
+<p>There are a few ways we could go about scripting a simple tree fractal like this. The differences arise in possible ways to store the data of the positions of all the shapes. Perhaps the simplest is to write a function which contains itself and draws the shapes on the pixel buffer and leaves them there, but we could also use nested <span class="code">pushMatrix();</span> and <span class="code">popMatrix();</span> functions to add up the rotations. Or a recursive function could write the data into a two dimensional array which would give us more flexibility as to how the data is manipulated. To give us the most flexibility we could use an array of custom objects.</p>
+<p>This applet uses a function contained twice within itself. The function is called once at the start of the program, draws a line, and then calls itself twice, those in turn call themselves four more times. The function passes down parameters for the angle and position and the number of iterations so it will stop. When the mouse is clicked the buffer is cleared with <span class="code">background(255);</span>and the function is called again with new random parameters.</p>
+<p class="center"><applet code="http://anthonymattox.com/simple_geometric_buffer" archive="http://www.anthonymattox.com/file/apps/simple_geometric_buffer.jar" width="400" height="400" ></applet></p>
+<p>The script looks like this:</p>
+<div class="code processing">
+<h4 class="cHead"><span><a href="http://www.processing.org">processing</a> code<br />
+		<a href="http://www.anthonymattox.com/code_formatter">code formatter</a></span>Tree Fractal</h4>
+<pre><span Class="KEY">float</span> aa=-.2;
+<span Class="KEY">float</span> ab=.2;
+
+<span Class="KEY">void</span> <span Class="KEY">setup</span>() {
+  <span Class="KEY">size</span>(400,400);
+  <span Class="KEY">background</span>(255);
+  <span Class="KEY">stroke</span>(0,0,0,50);
+  <span Class="KEY">noFill</span>();
+  <span Class="KEY">smooth</span>();
+  form(<span Class="STR">width</span>/2,<span Class="STR">height</span>,-<span Class="STR">HALF_PI</span>,7);
+}
+
+<span Class="KEY">void</span> <span Class="KEY">draw</span>() {
+}
+
+<span Class="KEY">void</span> form(<span Class="KEY">float</span> x,<span Class="KEY">float</span> y, <span Class="KEY">float</span> a, <span Class="KEY">int</span> c) {
+  <span Class="KEY">float</span> nx=x+45*<span Class="KEY">cos</span>(a);
+  <span Class="KEY">float</span> ny=y+45*<span Class="KEY">sin</span>(a);
+  <span Class="KEY">line</span>(x,y,nx,ny);
+  <span Class="KEY">if</span> (c&gt;0) {
+    form(nx,ny,a+aa,c-1);
+    form(nx,ny,a+ab,c-1);
+  }
+}
+
+<span Class="KEY">void</span> <span Class="KEY">mousePressed</span>() {
+  <span Class="KEY">background</span>(255);
+  aa=<span Class="KEY">random</span>(-<span Class="STR">PI</span>,<span Class="STR">PI</span>);
+  ab=<span Class="KEY">random</span>(-<span Class="STR">PI</span>,<span Class="STR">PI</span>);
+  form(<span Class="STR">width</span>/2,(<span Class="STR">height</span>/3)*2,-<span Class="STR">HALF_PI</span>,7);
+}</pre>
+</div>
+<p>The first two lines declare global variables. All we need here are the two branching angles. Next our setup function which includes the custom function &#8220;form&#8221;. A blank draw keeps the program running so the mouse input can be used. Within the mouse function the buffer is cleared new values are set for the two branching angles, and the function is called again. The last component is to define our recursive function. &#8220;void&#8221; lets processing know you are going to define a function, followed by the function name and in parentheses the parameters. Within curly brackets define the function. &#8216;nx&#8217; and &#8216;ny&#8217; are just the far end of each segment and subsequently the starting point of the new segments. This could easily be written:</p>
+<div class="code processing">
+<pre><span Class="KEY">void</span> form(<span Class="KEY">float</span> x,<span Class="KEY">float</span> y, <span Class="KEY">float</span> a, <span Class="KEY">int</span> c) {
+  <span Class="KEY">line</span>(x,y,x+45*<span Class="KEY">cos</span>(a),y+45*<span Class="KEY">sin</span>(a));
+  <span Class="KEY">if</span> (c&gt;0) {
+    form(x+45*<span Class="KEY">cos</span>(a),y+45*<span Class="KEY">sin</span>(a),a+aa,c-1);
+    form(x+45*<span Class="KEY">cos</span>(a),y+45*<span Class="KEY">sin</span>(a),a+ab,c-1);
+  }
+}</pre>
+</div>
+<p>This takes out that extra step, however, now the code is running the same math three times to calculate where to draw the line to and where to start each of the two new segments, so lets give the old computerbox a break.</p>
+<p>I will explain in another installment some more complex, but powerful ways of doing this but this simple method can be quite interesting. Changing the form drawn, in this case the line function, how many times the function recalls itself, or what parameters are passed down and how they are altered can can easily eat up a morning.</p>
+		</div>
+				<br class="clear" />
+	</div>
+		
+	<div id="comments">
+		
+			<h3><span>4 comments</span></h3>
+		
+				
+		<ul id="commentlist">
+				<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="index.html%3Fp=378.html">olivia</a></h5>
+			<div class="date">11.18.08</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>this is very informative and well written. i want to see some rabbits, maybe with fractal ears?</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://tresorg.com">visualex</a></h5>
+			<div class="date">05.13.09</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>youve got one falling!!!! thanx! allways wanted to know how to draw fractals! gonna try this with some 3d</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment even thread-even depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://silencefreedom.deviantart.com">silencefreedom</a></h5>
+			<div class="date">01.07.10</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Thanks for the example. This a great info of geometric-based fractals. I&#8217;m working on the IFS and Mandelbrot advance fractals (both processing &amp; js) which gonna apply this in. Processing can even generate 3D fractals too. Some demoscenes at Breakpoint are created with Processing and ASM</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1">
+		<div class="commentmeta">
+			<h5><a href="http://www.nunopeixotopinho.com">nuno peixoto</a></h5>
+			<div class="date">06.29.10</div>
+			<div class="reply">
+							</div>
+		</div>
+
+		<div class="commentbody">
+						<p>Hi!<br />
+this is fantastic!</p>
+<p>it´s a good idea to create a music app.</p>
+<p>Thanks</p>
+		</div>
+		<br class="clear" />
+
+	</li>
+		</ul>
+		
+			
+	</div>	</div>
+    <div id="foot">
+      <div id="footcontent">
+        <div id="cc">
+          <a href="http://creativecommons.org/licenses/by-nc/3.0/"></a>
+        </div>
+        <div id="links">
+          <a href="http://twitter.com/ahmattox" id="foot-twitter">@ahmattox</a>
+          <a href="http://friendsoftheweb.com/" id="foot-ftw">Friends of The Web</a>
+          <a href="http://madewithloveinbaltimore.org" id="foot-heart">Made with &hearts; in Baltimore</a>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+  </div><!-- / container -->
+  </body>
+</html>
